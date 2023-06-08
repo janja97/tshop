@@ -1,0 +1,30 @@
+.adminnav{
+    position: fixed;
+    height: 100%;
+    width: inherit;
+
+}
+
+.nav .nav-link {
+    color: white;
+    font-size: 1.5rem;
+}
+.nav-link:hover {
+    color: grey;
+
+}
+.img  {
+    width: 40px;
+    height: 40px;
+}
+.image {
+    width: 50%;
+    height: auto;
+}
+.admmin-card {
+    background: white;
+    padding: 3rem;
+}
+label {
+    padding: 1rem 0;
+}

@@ -1,0 +1,112 @@
+
+body  {
+    background: #EBF2FA;
+    color: #427AA1;
+    font-size: 1rem;
+}
+a , a:hover{
+    color: #427AA1;
+    text-decoration: none;
+}
+/*** navbar ***/
+.navbar {
+    background: #EBF2FA;
+    color: #427AA1;
+    font-size: 1rem;
+}
+.navbar-brand , .navbar-brand:hover {
+    font-size: 2rem;
+    color:#a5be00;
+}
+.nav-link , .nav-link:hover {
+    color: #427AA1;
+
+}
+
+/* card */
+
+.card{
+    border-radius: 1rem;
+}
+
+.description-card {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+
+}
+.imgF {
+    height: 200px;
+    width: -webkit-fill-available;
+    margin: 0 auto;
+}
+.product {
+    height: 550px;
+}
+.product .card-body {
+    position:absolute;
+    bottom: 10px;
+}
+/* .details {
+    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 200px;
+
+} */
+.baner {
+    background-color: #a5be00;
+    padding: 1rem;
+}
+.stock {
+    background: #427AA1;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    color: #EBF2FA;
+}
+.AddBtn {
+    margin-right: 1rem;
+    background: #427AA1;
+    padding: .5rem;
+    color: #EBF2FA;
+    border-radius: 1rem;
+    border: .1rem solid #427AA1 ;
+}
+.AddBtn:hover {
+    background: #EBF2FA;
+    color: #427AA1;
+}
+
+/* .quantity { */
+    /* padding: 0rem;
+    background-color: #427AA1 ;
+    color:  #EBF2FA;
+} */
+/* .input-group-text {
+    opacity: 0;
+    border: none;
+    color:  #EBF2FA;
+} */
+
+.cart-card {
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(190, 189, 189);
+}
+.btn-delite {
+    border: 1px solid #427AA1;
+    border-radius: 5px;
+    color: white;
+    background-color: #427AA1;
+    padding: 10px 12px;
+}
+.btn-buy {
+    border: 1px solid #427AA1;
+    border-radius: 5px;
+    color: white;
+    background-color: #427AA1;
+    padding: 15px 50px;
+    font-size: 20px;
+    margin-right: 55px;
+
+}
