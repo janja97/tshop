@@ -12,7 +12,7 @@
         <h1>Popularni proizvodi</h3>
         <div class="container row">
             @foreach($featured_products as $prod)
-                <div class="col-md-3 my-2">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2">
                    <a href="{{url('view-product/'.$prod->slug)}}">
                     <div class="card p-3 product">
                             <img src="{{$prod->image}}" alt="" class="imgF">
@@ -36,7 +36,7 @@
         <h1>Kategorije</h1>
         <div class="container row">
         @foreach($tranding_category as $cate)
-            <div class="col-md-4 my-2">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 ">
                 <a href="{{url('view-category/'.$cate->slug)}}">
                     <div class="p-3 card mx-auto" style="height:300px !important;">
                         <img src="{{$cate->image}}" alt="" class="imgF">

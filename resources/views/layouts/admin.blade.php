@@ -24,18 +24,9 @@
 </head>
 <body>
     <div class="wrapper">
+    @include('layouts.inc.adminnav')
+    @yield('content')
 
-        <div class="main-panel d-flex  pt-8">
-            <div class="col-2">
-                @include('layouts.inc.adminnav')
-
-            </div>
-            <div class="content col-10">
-                <!-- kontent admin das -->
-                @yield('content')
-            </div>
-        </div>
-        <!-- @include('layouts.inc.adminfooter') -->
     </div>
 
 

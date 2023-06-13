@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\Frontend\CartController;
+use App\Http\Controllers\Admin\BuyController;
 
 
 
@@ -28,6 +29,10 @@ Route::get('category',[FrontendController::class, 'category']);
 Route::get('view-category/{slug}',[FrontendController::class, 'viewcategory']);
 Route::get('category/{cate_slug}/{prod_slug}',[FrontendController::class, 'productview']);
 Route::get('view-product/{prod_slug}',[FrontendController::class, 'prodview']);
+Route::post('/checkout', [CartController::class, 'checkout'])->name('checkout');
+
+
+
 
 // Route::post('add_to_cart', [CartController::class,'addToCart']);
 
@@ -46,6 +51,7 @@ Route::middleware(['auth'])->group(function(){
 
 });
 Route::middleware( ['auth','isAdmin'])->group(function (){
+    // Route::get('/admin/dashboard', [FrontendController::class, 'index']);
     Route::get('dashboard', 'App\Http\Controllers\Admin\FrontendController@index');
     Route::get('categories', 'App\Http\Controllers\Admin\CategoryController@index');
     Route::get('add-category', 'App\Http\Controllers\Admin\CategoryController@add');

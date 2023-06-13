@@ -57,18 +57,6 @@
                         <label for="">trending:</label>
                         <input type="checkbox" name="trending">
                     </div>
-                    <div class="col-md-6">
-                        <label for="">Meta title:</label>
-                        <input type="text" class="form-control" name="meta_title">
-                    </div>
-                    <div class="col-md-12">
-                        <label for="">Meta keywords</label>
-                        <textarea name="meta_keywords" rows="3" class="form-control"></textarea>
-                    </div>
-                    <div class="col-md-12">
-                        <label for="">Meta description</label>
-                        <textarea name="meta_description" rows="3" class="form-control"></textarea>
-                    </div>
                     <div class="col-md-12">
                         <label for="">Image</label>
                         <input type="text" name="image" class="form-control">
@@ -77,7 +65,7 @@
 
 
                     <div class="col-md-12">
-                        <button class="btn" type="submit">Submit</button>
+                        <button class="AddBtn mt-5" type="submit">Submit</button>
                     </div>
                 </div>
             </form>

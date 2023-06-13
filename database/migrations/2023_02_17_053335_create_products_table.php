@@ -27,10 +27,6 @@ return new class extends Migration
             $table->string('tax');
             $table->tinyInteger('status');
             $table->tinyInteger('trending');
-            $table->mediumText('meta_title');
-            $table->mediumText('meta_keywords');
-            $table->mediumText('meta_description');
-
             $table->timestamps();
         });
     }

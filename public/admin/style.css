@@ -1,18 +1,115 @@
-.adminnav{
-    position: fixed;
-    height: 100%;
-    width: inherit;
+/* CSS za navigaciju */
+.adminnav {
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 
-}
+ .adminnav .nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+ .adminnav .navbar-toggle-input {
+    display: none;
+  }
 
-.nav .nav-link {
-    color: white;
-    font-size: 1.5rem;
-}
-.nav-link:hover {
-    color: grey;
+ .adminnav .navbar-toggler {
+    display: none;
+    cursor: pointer;
+  }
 
-}
+ .adminnav .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    display: block;
+    border-radius: 2px;
+  }
+
+ .adminnav .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+ .adminnav .nav-link {
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    display: none;
+    min-width: 150px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+
+  .dropdown-item {
+    display: block;
+    padding: 5px 0;
+    color: #333;
+    text-decoration: none;
+  }
+
+ .adminnav .nav-item {
+    flex: 0 0 auto;
+  }
+
+ .adminnav .nav-link {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    display: none;
+    min-width: 150px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+  /* CSS za responsivnost */
+  @media (max-width: 768px) {
+   .adminnav .navbar-toggler {
+      display: block;
+    }
+
+   .adminnav .navbar-toggle-input:checked ~.adminnav .navbar-collapse {
+      max-height: 1000px;
+    }
+
+   .adminnav .nav-link {
+      margin: 5px 0;
+    }
+
+    .dropdown-menu {
+      position: static;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+
+
 .img  {
     width: 40px;
     height: 40px;
@@ -28,3 +125,49 @@
 label {
     padding: 1rem 0;
 }
+.description {
+    white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 200px;
+}
+
+    .admin .table-container {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .admin table {
+        width: auto;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    .admin th, .admin td {
+        padding: 10px;
+    }
+
+    .admin th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    .admin td {
+        border-top: 1px solid #427AA1;
+    }
+
+    .admin tbody tr:last-child td {
+        border-bottom: 1px solid #427AA1;
+    }
+
+    .admin img {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .admin thead {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: #f2f2f2;
+    }

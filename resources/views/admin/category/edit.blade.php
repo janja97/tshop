@@ -18,10 +18,6 @@
                         <label for="">Slug:</label>
                         <input type="text" value="{{$category->slug}}"  class="form-control" name="slug">
                     </div>
-                    <div class="col-md-12">
-                        <label for="">Description:</label>
-                        <textarea name="description"  rows="10" class="form-control">{{$category->description}}</textarea>
-                    </div>
                     <div class="col-md-6">
                         <label for="">Status:</label>
                         <input type="checkbox" {{$category->status =='1' ? 'checked':''}}   name="status">
@@ -29,18 +25,6 @@
                     <div class="col-md-6">
                         <label for="">Popular:</label>
                         <input type="checkbox" {{$category->popular =='1' ? 'checked':''}}    name="popular">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="">Meta title:</label>
-                        <input type="text" class="form-control" name="meta_title" value="{{$category->meta_title}}">
-                    </div>
-                    <div class="col-md-12">
-                        <label for="">Meta keywords</label>
-                        <textarea name="meta_keywords"  rows="10" class="form-control">{{$category->meta_keywords}}</textarea>
-                    </div>
-                    <div class="col-md-12">
-                        <label for="">Meta description</label>
-                        <textarea name="meta_descript"  rows="10" class="form-control">{{$category->meta_descript}}</textarea>
                     </div>
                     @if($category->image)
                         <img src="{{$category->image}}" alt ="image" class="image"/>

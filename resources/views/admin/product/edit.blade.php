@@ -56,18 +56,6 @@
                         <label for="">trending:</label>
                         <input type="checkbox" name="trending" {{$products->trending=='1' ? 'checked' : ''}}>
                     </div>
-                    <div class="col-md-6">
-                        <label for="">Meta title:</label>
-                        <input type="text" class="form-control" name="meta_title" value="{{$products->meta_title}}">
-                    </div>
-                    <div class="col-md-12">
-                        <label for="">Meta keywords</label>
-                        <textarea name="meta_keywords" rows="3" class="form-control">{{$products->meta_keywords}}</textarea>
-                    </div>
-                    <div class="col-md-12">
-                        <label for="">Meta description</label>
-                        <textarea name="meta_description" rows="3" class="form-control">{{$products->meta_description}}</textarea>
-                    </div>
                     @if($products->image)
                         <img src="{{$products->image}}" alt="" class="image">
                         @endif

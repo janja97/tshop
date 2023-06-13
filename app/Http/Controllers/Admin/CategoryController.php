@@ -30,13 +30,9 @@ class CategoryController extends Controller
         // }
         $category->name =$request->input('name');
         $category->slug =$request->input('slug');
-        $category->description =$request->input('description');
         $category->status =$request->input('status')==TRUE ? '1':'0';
         $category->popular =$request->input('popular')==TRUE ? '1':'0';
         $category->image =$request->input('image');
-        $category->meta_title =$request->input('meta_title');
-        $category->meta_descript =$request->input('meta_descript');
-        $category->meta_keywords =$request->input('meta_keywords');
         $category->save();
         return redirect('/dashboard')->with('status', 'Category added Successfuly');
 
@@ -60,13 +56,9 @@ class CategoryController extends Controller
         // }
         $category->name =$request->input('name');
         $category->slug =$request->input('slug');
-        $category->description =$request->input('description');
         $category->status =$request->input('status')==TRUE ? '1':'0';
         $category->popular =$request->input('popular')==TRUE ? '1':'0';
         $category->image =$request->input('image');
-        $category->meta_title =$request->input('meta_title');
-        $category->meta_descript =$request->input('meta_descript');
-        $category->meta_keywords =$request->input('meta_keywords');
         $category->update();
         return redirect('categories')->with('status','uspjesno projmenjeno');
     }

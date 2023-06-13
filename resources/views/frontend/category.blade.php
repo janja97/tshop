@@ -12,7 +12,7 @@
     <h1>Kategorije</h1>
     <div class="container row">
         @foreach($category as $cate)
-        <div class="col-md-3 mt-2">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-2">
             <a href="{{url('view-category/'.$cate->slug)}}">
                 <div class="card p-3" style="height:350px;">
                     <img src="{{$cate->image}}" alt="" class="imgF">

@@ -15,7 +15,7 @@
     <div class="row py-5">
     @if(count($products) > 1)
         @foreach($products as $prod)
-            <div class="col-md-3">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3  my-2">
                 <a href="{{url('category/'.$category->slug.'/'.$prod->slug)}}">
 
                     <div class="card p-3">

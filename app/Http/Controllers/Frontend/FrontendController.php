@@ -5,7 +5,8 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Admin\ProductController;
 use App\Models\Category;
-
+use App\Mail\OrderConfirmation;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
 use App\Models\Product;
@@ -58,5 +59,6 @@ class frontendController extends Controller
             return redirect('/')->with('status','greska');
         }
     }
+
 }
 
