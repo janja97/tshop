@@ -23,6 +23,7 @@ use App\Http\Controllers\Admin\BuyController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+//URL::forceRootUrl('http://studenti.sum.ba/projekti/rwa/2023/g17');
 
 Route::get('/',[FrontendController::class, 'index']);
 Route::get('category',[FrontendController::class, 'category']);
