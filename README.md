@@ -35,6 +35,7 @@ Set up environment variables:
 Copy the example environment file:
 cp .env.example .env
 Configure the .env file with your database and other credentials.
+
 Generate application key:
 php artisan key:generate
 
